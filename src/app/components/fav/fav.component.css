@@ -1,0 +1,83 @@
+.mod {
+    width: 100%; 
+    height: auto; 
+    max-height: 200px; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 5px;
+    border: 5px white solid;
+  }
+  
+  .card-css {
+    margin: 10px;
+    height: auto;
+    background-color: black;
+  }
+  .aud{
+    width: 100px;
+  }
+  
+  .car {
+    width: 100%;
+    height: 300; 
+  }
+  .card-text small a {
+    font-size: 12px; 
+}
+
+.con{
+    display: flex;
+}
+.but{
+    width: auto;
+    height: 20px;
+    padding: 2px;
+    margin-left: 20px;
+}
+
+  .image-container {
+    position: relative;
+  }
+  
+  .icon{
+    margin-left: 20px;
+  }
+  .heart {
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color :  rgb(232, 224, 224) ;
+    color: rgb(18, 12, 12);
+    border: none;
+    border-radius: 80%;
+    cursor: pointer;
+    outline: none;
+  }
+  .icon-but{
+    margin-top: 5px;
+  }
+  .bot{
+    background-color: rgb(198, 236, 163);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+
+  }
+  .pay-button {
+   
+    
+    
+    background-color: rgb(226, 211, 224);
+    color: rgb(26, 23, 23);
+    border: none;
+    border-radius: 80%;
+    height: 30px;
+    
+  }
+  .card-title{
+    color: aliceblue;
+  }
+  

@@ -1,0 +1,82 @@
+.sidenav-container {
+    height: 100%;
+    background-color: black !important;
+    
+  }
+  
+  .sidenav {
+    width:0px;
+    /* background-image: url('https://cdn.pixabay.com/animation/2023/04/06/23/17/23-17-32-365_512.gif')} */
+    background-color: black !important;
+  }
+  .sidenav .mat-toolbar {
+    background: inherit;
+  }
+  
+  .mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .mat-expansion-panel {
+    max-width: 300px; 
+    width: 100%; /* Ensure it takes the full width of its container */
+  }
+  .img{
+    height: 50px;
+  }
+  
+ .tool{
+  background-color: black;
+ } 
+ .gig{
+  height: 80px;
+  margin-left: 150px;
+ }
+ .list{
+  color: aliceblue;
+  border-bottom: none;
+ }
+ .rem{
+  margin: 20px;
+  color: rgb(236, 235, 233);
+  
+  text-decoration: none; 
+  border-bottom: 10px; 
+ } 
+ .tex{
+  color: aliceblue;
+
+
+ }
+ .bt{
+  border: 0ch;
+  color: aliceblue;
+  background-color: black;
+ }
+ .log{
+  margin-right: 10px;
+ margin-left: 50px;
+  color: rgb(236, 235, 233);
+  
+  text-decoration: none; 
+  border-bottom: 10px; 
+ }
+ .nav-background{
+  border: 3px solid salmon;
+ }
+ .user-email:hover .username {
+  display: inline-block;
+}
+
+
+.profile-img{
+  border-radius: 50%;
+  width: 40px; 
+  height: 40px;
+  object-fit: cover; 
+  margin-right: 50px;
+
+}
+

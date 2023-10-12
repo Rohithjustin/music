@@ -1,0 +1,80 @@
+<mat-sidenav-container class="sidenav-container " *ngIf="showNavbar">
+  <mat-sidenav #drawer class="sidenav " fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+    <mat-toolbar><button mat-icon-button class="fav" (click)="drawer.toggle()"><svg xmlns="http://www.w3.org/2000/svg"
+          width="16" height="16" fill="currentColor" class="bi bi-music-note-list" viewBox="0 0 16 16">
+          <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
+          <path fill-rule="evenodd" d="M12 3v10h-1V3h1z" />
+          <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z" />
+          <path fill-rule="evenodd"
+            d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z" />
+        </svg></button></mat-toolbar>
+    <mat-nav-list>
+
+     
+
+      <a mat-list-item routerLink="/favorite">Favorite</a>
+      <a mat-list-item routerLink="/dashboard">Home</a>
+      <a mat-list-item routerLink="/login">Logout</a>
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="tool">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+     
+      
+      <!-- <button mat-icon-button class="fav" (click)="drawer.toggle()"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+          height="16" fill="currentColor" class="bi bi-music-note-list" viewBox="0 0 16 16">
+          <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
+          <path fill-rule="evenodd" d="M12 3v10h-1V3h1z" />
+          <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z" />
+          <path fill-rule="evenodd"
+            d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z" />
+        </svg></button> -->
+        <img class="profile-img " [src]="url" alt="A sample image"/>
+      <img class="img"
+        src="https://res.cloudinary.com/deksfysn1/image/upload/v1695642817/WhatsApp_Image_2023-09-25_at_5.21.10_PM_jwmkpa.jpg"
+        alt="A sample image">
+      <p class="tex">Rhythm Music</p>
+      <img class="gig"
+        src="https://res.cloudinary.com/deksfysn1/image/upload/v1695705730/ezgif.com-video-to-gif_if078c.gif">
+      <div clas="list">
+        <a class="rem" routerLink="/dashboard">Home</a>
+        <!-- <a class="rem" href="/footer">Footer</a> -->
+        <a class="rem" routerLink="/favorite">Favorite</a>
+        
+
+ <button type="button" class="bt" (mouseover)="onMouseOver()" (mouseout)="onMouseOut()">
+          Profile
+           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+          </svg>
+          <span class="user-email" *ngIf="showUsernameOnHover && showEmail">{{ userEmail }}</span>
+ 
+        </button> 
+         
+
+        
+
+
+
+
+
+
+
+        <a class="log" (click)="logout()"> Logout<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+          <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+        </svg></a>
+        
+      </div>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <!-- <router-outlet></router-outlet> -->
+    
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,219 @@
+/* Carousel Styles */
+.carousel-size {
+  max-height: 400px; /* Adjust the maximum height as needed */
+}
+
+.carousel-inner {
+  max-height: 300px; /* Adjust the maximum height of the carousel items */
+}
+.mod {
+    width: 90%; 
+    height: 500px !important; 
+    max-height: 200px;  
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .card-background
+  {
+    background-color: rgb(200, 216, 126);
+  }
+  
+  
+  .card-css {
+    margin: 10px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 10px; 
+  }
+  .card-css:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.6); 
+    background-color: #f0f0f0; 
+  }
+  
+  .card-css h2 {
+    font-size: 24px;
+    color: #333; 
+    margin-top: 0; 
+  }
+  
+  .card-css p {
+    font-size: 16px; 
+    color: #666; 
+  }
+  
+  .card-css a {
+    text-decoration: none; 
+    color: #007bff; 
+    transition: color 0.3s ease-in-out; 
+  }
+  
+  .card-css a:hover {
+    color: #0056b3; 
+  }
+  .aud{
+    width: 100px;
+  }
+  
+  .car {
+    width: 100%;
+    height: 300px; 
+  }
+  .card-text small a {
+    font-size: 12px; 
+}
+
+.con{
+    display: flex;
+}
+.but{
+    width: auto;
+    height: 20px;
+    padding: 2px;
+    margin-left: 20px;
+}
+.heart-button {
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: rgb(10, 7, 7);
+    color: white;
+    border: none;
+    border-radius: 80%;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  .bot{
+    background-color: rgb(198, 236, 163);
+    display: flex;
+    border-radius: 5px;
+    
+
+  }
+  .icon{
+    margin-left: 20px;
+  }
+  .pay-button {
+   
+    
+    
+    background-color: rgb(226, 211, 224);
+    color: rgb(26, 23, 23);
+    border: none;
+    border-radius: 80%;
+    
+  }
+  
+  .mat-expansion-panel {
+    max-width: 300px; 
+    width: 100%; 
+  }
+  .card-css:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+  /* .con{
+    background-color: black !important;
+   } */
+  .nav-background{
+    background-color: black !important;
+    
+   
+   }
+   .clicked-button {
+    background-color: #FF5733; /* Replace with the desired background color */
+  }
+  
+  .carousel-size{
+    height: 400px;
+  }
+
+
+  #recommendationCarousel {
+    max-width: 400px; /* Adjust the maximum width */
+    margin: 0 auto; /* Center the carousel horizontally */
+  }
+  
+  .carousel-inner {
+    max-height: 300px; 
+  }
+  
+  .card {
+    text-align: center; 
+  }
+  
+  .card-img-top {
+    max-width: 100%; 
+    height: auto; 
+  }
+  .rec-card{
+    background-color: rgb(45, 53, 53);
+    height: auto;
+    width: 850px;
+    border: 1px rgb(228, 225, 225) solid;
+    display: flex;
+    flex-direction: ;
+    justify-content: space-between;
+    border-radius: 10px;
+  }
+  .mod-image{
+    height: 40px;
+    width: 50px;
+    border-radius: 5px;
+  }
+  
+  .bot-rec{
+    margin-left: 10px;
+    margin-top: 5px;
+    display: flex;
+
+  }
+  .rec-button{
+    display: flex;
+    /* justify-content : flex-end; */
+    flex-direction: space-between;
+    /* margin-left: 300px; */
+    margin: 5px;
+    margin-right: 40px;
+    
+  }
+  .icon{
+    margin-left: 20px;
+  }
+  .pay-button{
+    border: 0ch;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+  }
+  .icon-but{
+    margin-top: 10px;
+  }
+  .rec-container{
+    margin: 30px;
+  }
+  .icon-color{
+    color: aliceblue;
+  }
+  .img-siz{
+    height: 3000px;
+  }
+  .slide-size{
+    border-radius: 50px;
+  }
+ 
+
+  
+  
+
+  

@@ -1,0 +1,62 @@
+#recommendationCarousel {
+    max-width: 400px; /* Adjust the maximum width */
+    margin: 0 auto; /* Center the carousel horizontally */
+  }
+  
+  .carousel-inner {
+    max-height: 300px; 
+  }
+  
+  .card {
+    text-align: center; 
+  }
+  
+  .card-img-top {
+    max-width: 100%; 
+    height: auto; 
+  }
+  .rec-card{
+    background-color: aqua;
+    height: auto;
+    width: 800px;
+    border: 1px rgb(228, 225, 225) solid;
+    display: flex;
+    flex-direction: ;
+    justify-content: space-between;
+  }
+  .mod{
+    height: 40px;
+    width: 60px;
+    border-radius: 5px;
+  }
+  
+  .bot{
+    margin-left: 20px;
+    margin-top: 5px;
+    display: flex;
+
+  }
+  .rec-button{
+    display: flex;
+    /* justify-content : flex-end; */
+    flex-direction: space-between;
+    /* margin-left: 300px; */
+    margin: 5px;
+    
+  }
+  .icon{
+    margin-left: 20px;
+  }
+  .pay-button{
+    border: 0ch;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+  }
+  .icon-but{
+    margin-top: 10px;
+  }
+  
+  
+
+  
